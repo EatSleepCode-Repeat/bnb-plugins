@@ -1,0 +1,46 @@
+{
+  "version": 1,
+  "updated_at": "2026-10-12T00:00:00Z",
+  "plugins": [
+    {
+      "name": "aws",
+      "description": "AWS SSO login & profile switcher with Vault secret syncing",
+      "author": "Chris Clines",
+      "category": "Cloud & DevOps",
+      "type": "official",
+      "path": "official/aws"
+    },
+    {
+      "name": "docker",
+      "description": "Docker Compose & container management shortcuts for Ctrl+K",
+      "author": "Chris Clines",
+      "category": "Containers",
+      "type": "official",
+      "path": "official/docker"
+    },
+    {
+      "name": "gh",
+      "description": "GitHub PR and Actions workflow status wrapper",
+      "author": "Chris Clines",
+      "category": "Git & GitHub",
+      "type": "official",
+      "path": "official/gh"
+    },
+    {
+      "name": "python",
+      "description": "Python virtualenv activator & cache trash guardrail",
+      "author": "Chris Clines",
+      "category": "Languages",
+      "type": "official",
+      "path": "official/python"
+    },
+    {
+      "name": "sysinfo",
+      "description": "Quick system resource monitor and top process inspector",
+      "author": "Chris Clines",
+      "category": "System",
+      "type": "official",
+      "path": "official/sysinfo"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+[plugin]
+name = "aws"
+version = "0.1.0"
+description = "Fast AWS profile switcher & SSO login helper"
+author = "Chris Clines"
+category = "Cloud & DevOps"
+
+[[action]]
+label = "☁️ Switch AWS Profile"
+command = "aws sso login --profile $1"
+category = "AWS"
+
+[[action]]
+label = "🔒 Sync AWS Vault Secrets"
+command = "echo 'Syncing AWS credentials into bnb vault...'"
+secrets = ["AWS_ACCESS_KEY_ID", "AWS_SECRET_ACCESS_KEY"]

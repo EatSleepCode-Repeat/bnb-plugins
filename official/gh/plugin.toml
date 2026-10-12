@@ -1,0 +1,16 @@
+[plugin]
+name = "gh"
+version = "0.1.0"
+description = "GitHub CLI integration for pull requests and CI status"
+author = "Chris Clines"
+category = "Git & GitHub"
+
+[[action]]
+label = "🐙 View Assigned Pull Requests"
+command = "gh pr list --author '@me'"
+category = "GitHub"
+
+[[action]]
+label = "⚡ View Recent Workflow Runs"
+command = "gh run list --limit 5"
+category = "GitHub"

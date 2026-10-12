@@ -1,0 +1,21 @@
+[plugin]
+name = "docker"
+version = "0.1.0"
+description = "Quick Docker Compose & container actions for Ctrl+K"
+author = "Chris Clines"
+category = "Containers"
+
+[[action]]
+label = "🐳 Docker Compose Up (Detached)"
+command = "docker compose up -d"
+category = "Docker"
+
+[[action]]
+label = "🛑 Docker Compose Down"
+command = "docker compose down"
+category = "Docker"
+
+[[action]]
+label = "🧹 Prune Stopped Containers & Volumes"
+command = "docker system prune -f"
+category = "Docker"

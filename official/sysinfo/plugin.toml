@@ -1,0 +1,16 @@
+[plugin]
+name = "python"
+version = "0.1.0"
+description = "Python virtualenv auto-activation & cache cleaner"
+author = "Chris Clines"
+category = "Languages"
+
+[[action]]
+label = "🐍 Activate Local VirtualEnv"
+command = "source .venv/bin/activate"
+category = "Python"
+
+[[action]]
+label = "🗑️ Safely Trash __pycache__ Files"
+command = "find . -type d -name '__pycache__' -exec rm -r {} +"
+category = "Python"

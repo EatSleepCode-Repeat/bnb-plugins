@@ -1,0 +1,21 @@
+[plugin]
+name = "git"
+version = "0.1.0"
+description = "Common, read-only Git status, history, and diff shortcuts"
+author = "Chris Clines"
+category = "Git & GitHub"
+
+[[action]]
+label = "🌿 Git Status"
+command = "git status --short --branch"
+category = "Git"
+
+[[action]]
+label = "🧾 Recent Git History"
+command = "git log -5 --oneline"
+category = "Git"
+
+[[action]]
+label = "📊 Git Diff Summary"
+command = "git diff --stat"
+category = "Git"

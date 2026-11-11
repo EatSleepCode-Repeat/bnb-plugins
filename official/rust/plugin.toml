@@ -1,0 +1,21 @@
+[plugin]
+name = "rust"
+version = "0.1.0"
+description = "Cargo formatting, test, and lint shortcuts"
+author = "Chris Clines"
+category = "Languages"
+
+[[action]]
+label = "🎨 Check Rust Formatting"
+command = "cargo fmt --check"
+category = "Rust"
+
+[[action]]
+label = "🧪 Run Cargo Tests"
+command = "cargo test"
+category = "Rust"
+
+[[action]]
+label = "🔎 Run Clippy"
+command = "cargo clippy --all-targets -- -D warnings"
+category = "Rust"

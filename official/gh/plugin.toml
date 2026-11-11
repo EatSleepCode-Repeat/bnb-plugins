@@ -1,13 +1,13 @@
 [plugin]
 name = "gh"
 version = "0.1.0"
-description = "GitHub CLI integration for pull requests and CI status"
+description = "GitHub CLI helpers for pull requests and Actions workflows"
 author = "Chris Clines"
 category = "Git & GitHub"
 
 [[action]]
-label = "🐙 View Assigned Pull Requests"
-command = "gh pr list --author '@me'"
+label = "🐙 View Pull Request Status"
+command = "gh pr status"
 category = "GitHub"
 
 [[action]]

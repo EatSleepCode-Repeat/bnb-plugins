@@ -1,16 +1,21 @@
 [plugin]
 name = "python"
 version = "0.1.0"
-description = "Python virtualenv auto-activation & cache cleaner"
+description = "Python virtual environment and package helpers"
 author = "Chris Clines"
 category = "Languages"
 
 [[action]]
-label = "🐍 Activate Local VirtualEnv"
-command = "source .venv/bin/activate"
+label = "🐍 Create a Local Virtual Environment"
+command = "python -m venv .venv"
 category = "Python"
 
 [[action]]
-label = "🗑️ Safely Trash __pycache__ Files"
-command = "find . -type d -name '__pycache__' -exec rm -r {} +"
+label = "📦 Check Python Package Tool"
+command = "python -m pip --version"
+category = "Python"
+
+[[action]]
+label = "🔎 List Outdated Python Packages"
+command = "python -m pip list --outdated"
 category = "Python"

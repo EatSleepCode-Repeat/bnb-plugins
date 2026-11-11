@@ -1,7 +1,7 @@
 [plugin]
 name = "docker"
 version = "0.1.0"
-description = "Quick Docker Compose & container actions for Ctrl+K"
+description = "Docker Compose status, logs, and lifecycle shortcuts"
 author = "Chris Clines"
 category = "Containers"
 
@@ -11,11 +11,16 @@ command = "docker compose up -d"
 category = "Docker"
 
 [[action]]
-label = "🛑 Docker Compose Down"
+label = "🛑 Stop Compose Stack (removes containers)"
 command = "docker compose down"
 category = "Docker"
 
 [[action]]
-label = "🧹 Prune Stopped Containers & Volumes"
-command = "docker system prune -f"
+label = "📋 Docker Compose Status"
+command = "docker compose ps"
+category = "Docker"
+
+[[action]]
+label = "📜 Show Recent Compose Logs"
+command = "docker compose logs --tail=100"
 category = "Docker"

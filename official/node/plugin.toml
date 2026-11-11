@@ -1,0 +1,21 @@
+[plugin]
+name = "node"
+version = "0.1.0"
+description = "Node.js and npm project script and package helpers"
+author = "Chris Clines"
+category = "Languages"
+
+[[action]]
+label = "📜 List npm Scripts"
+command = "npm run"
+category = "Node.js"
+
+[[action]]
+label = "🧪 Run npm Tests"
+command = "npm test"
+category = "Node.js"
+
+[[action]]
+label = "🔎 Check Outdated npm Packages"
+command = "npm outdated"
+category = "Node.js"

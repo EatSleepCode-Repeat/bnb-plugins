@@ -1,16 +1,26 @@
 [plugin]
-name = "python"
+name = "sysinfo"
 version = "0.1.0"
-description = "Python virtualenv auto-activation & cache cleaner"
+description = "Unix-like system, disk, and process information"
 author = "Chris Clines"
-category = "Languages"
+category = "System"
 
 [[action]]
-label = "🐍 Activate Local VirtualEnv"
-command = "source .venv/bin/activate"
-category = "Python"
+label = "🖥️ Operating System"
+command = "uname -a"
+category = "System"
 
 [[action]]
-label = "🗑️ Safely Trash __pycache__ Files"
-command = "find . -type d -name '__pycache__' -exec rm -r {} +"
-category = "Python"
+label = "⏱️ Uptime and Load"
+command = "uptime"
+category = "System"
+
+[[action]]
+label = "💽 Disk Space"
+command = "df -h"
+category = "System"
+
+[[action]]
+label = "📊 Processes"
+command = "ps -ef"
+category = "System"

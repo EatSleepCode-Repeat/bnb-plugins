@@ -1,10 +1,10 @@
 {
   "version": 1,
-  "updated_at": "2026-10-12T00:00:00Z",
+  "updated_at": "2026-11-11T00:00:00Z",
   "plugins": [
     {
       "name": "aws",
-      "description": "AWS SSO login & profile switcher with Vault secret syncing",
+      "description": "AWS CLI helpers for SSO login, profiles, and identity checks",
       "author": "Chris Clines",
       "category": "Cloud & DevOps",
       "type": "official",
@@ -12,7 +12,7 @@
     },
     {
       "name": "docker",
-      "description": "Docker Compose & container management shortcuts for Ctrl+K",
+      "description": "Docker Compose status, logs, and lifecycle shortcuts",
       "author": "Chris Clines",
       "category": "Containers",
       "type": "official",
@@ -20,7 +20,7 @@
     },
     {
       "name": "gh",
-      "description": "GitHub PR and Actions workflow status wrapper",
+      "description": "GitHub CLI helpers for pull requests and Actions workflows",
       "author": "Chris Clines",
       "category": "Git & GitHub",
       "type": "official",
@@ -28,7 +28,7 @@
     },
     {
       "name": "python",
-      "description": "Python virtualenv activator & cache trash guardrail",
+      "description": "Python virtual environment and package helpers",
       "author": "Chris Clines",
       "category": "Languages",
       "type": "official",
@@ -36,11 +36,35 @@
     },
     {
       "name": "sysinfo",
-      "description": "Quick system resource monitor and top process inspector",
+      "description": "Unix-like system, disk, and process information",
       "author": "Chris Clines",
       "category": "System",
       "type": "official",
       "path": "official/sysinfo"
+    },
+    {
+      "name": "git",
+      "description": "Common, read-only Git status, history, and diff shortcuts",
+      "author": "Chris Clines",
+      "category": "Git & GitHub",
+      "type": "official",
+      "path": "official/git"
+    },
+    {
+      "name": "node",
+      "description": "Node.js and npm project script and package helpers",
+      "author": "Chris Clines",
+      "category": "Languages",
+      "type": "official",
+      "path": "official/node"
+    },
+    {
+      "name": "rust",
+      "description": "Cargo formatting, test, and lint shortcuts",
+      "author": "Chris Clines",
+      "category": "Languages",
+      "type": "official",
+      "path": "official/rust"
     }
   ]
 }

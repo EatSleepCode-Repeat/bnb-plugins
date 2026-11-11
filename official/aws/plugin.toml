@@ -1,16 +1,21 @@
 [plugin]
 name = "aws"
 version = "0.1.0"
-description = "Fast AWS profile switcher & SSO login helper"
+description = "AWS CLI helpers for SSO login, profiles, and identity checks"
 author = "Chris Clines"
 category = "Cloud & DevOps"
 
 [[action]]
-label = "☁️ Switch AWS Profile"
-command = "aws sso login --profile $1"
+label = "☁️ Sign in with AWS SSO"
+command = "aws sso login"
 category = "AWS"
 
 [[action]]
-label = "🔒 Sync AWS Vault Secrets"
-command = "echo 'Syncing AWS credentials into bnb vault...'"
-secrets = ["AWS_ACCESS_KEY_ID", "AWS_SECRET_ACCESS_KEY"]
+label = "📋 List AWS Profiles"
+command = "aws configure list-profiles"
+category = "AWS"
+
+[[action]]
+label = "🪪 Check AWS Caller Identity"
+command = "aws sts get-caller-identity"
+category = "AWS"
